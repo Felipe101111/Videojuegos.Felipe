@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://jutpyimp8y8p"]
+
+[ext_resource type="Script" uid="uid://ckv4k7k6rsydd" path="res://arkanoid/ganaste_juego.gd" id="1_wcs01"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gci2y"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(0.7660297, 0.8274846, 0.16841516, 0.6)
+shadow_size = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wcs01"]
+bg_color = Color(0.45640576, 1.5546233e-05, 0.34587127, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ffuk6"]
+bg_color = Color(0.975993, 0.20418131, 0.81283367, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 6
+
+[node name="ganaste_juego" type="Control" unique_id=1877821041]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wcs01")
+
+[node name="Panel" type="Panel" parent="." unique_id=2135416129]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 645.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=4563353]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -149.25
+offset_top = -116.5
+offset_right = 149.25
+offset_bottom = 116.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="reanudar_juego" type="Button" parent="Panel/VBoxContainer" unique_id=1242172476]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.8139339, 0.9472919, 0.11191245, 1)
+theme_override_colors/font_focus_color = Color(0.8714671, 0.99348277, 0.81743646, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_gci2y")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wcs01")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ffuk6")
+text = "REANUDAR JUEGO"
+
+[node name="volver_al_menu" type="Button" parent="Panel/VBoxContainer" unique_id=444399482]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.8139339, 0.9472919, 0.11191245, 1)
+theme_override_colors/font_focus_color = Color(0.8714671, 0.99348277, 0.81743646, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_gci2y")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wcs01")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ffuk6")
+text = "VOLVER AL MENU"
+
+[node name="ganar_o_perder" type="Label" parent="Panel" unique_id=1355429201]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -172.5
+offset_top = 63.0
+offset_right = 172.5
+offset_bottom = 175.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 67
+text = "GANASTE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Panel/VBoxContainer/reanudar_juego" to="." method="_on_reanudar_juego_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/volver_al_menu" to="." method="_on_volver_al_menu_pressed"]

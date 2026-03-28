@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://p8s3ve1agowk"]
+
+[ext_resource type="Texture2D" uid="uid://eo0vm80utais" path="res://PNG/Default (64px)/water.png" id="1_dkrkt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jk01s"]
+size = Vector2(97, 71)
+
+[node name="bloque" type="StaticBody2D" unique_id=2042011558]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1406859289]
+position = Vector2(-15.5, 0)
+scale = Vector2(1.484375, 1)
+texture = ExtResource("1_dkrkt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1493990499]
+position = Vector2(-15.5, -0.5)
+shape = SubResource("RectangleShape2D_jk01s")

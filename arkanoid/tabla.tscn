@@ -1,16 +1,17 @@
 [gd_scene format=3 uid="uid://ddb80xuje1cus"]
 
-[ext_resource type="Texture2D" uid="uid://q35l6apljlfj" path="res://arkanoid/kenney_puzzle-pack/png/paddleBlu.png" id="1_ry1ed"]
+[ext_resource type="Texture2D" uid="uid://bccn8unjfh064" path="res://PNG/Default (64px)/wall.png" id="1_ry1ed"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+size = Vector2(60, 20)
 
 [node name="tabla" type="CharacterBody2D" unique_id=216499585]
 position = Vector2(588, 317)
 motion_mode = 1
 
 [node name="Wall" type="Sprite2D" parent="." unique_id=1955639675]
-position = Vector2(-2.499979, -23.000011)
-scale = Vector2(0.7980769, 0.8333324)
 texture = ExtResource("1_ry1ed")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1276310446]
-position = Vector2(-54.774414, -66.48595)
-polygon = PackedVector2Array(52.774414, 33.485947, 13.774414, 36.485947, 10.774414, 39.485947, 10.774414, 46.485947, 16.774414, 53.485947, 87.774414, 53.485947, 93.774414, 47.485947, 93.774414, 39.485947, 90.774414, 36.485947)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=914422417]
+position = Vector2(0, -20)
+shape = SubResource("RectangleShape2D_0xm2m")

@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-var speed = 550.0
-var dirreccion = Vector2(0,0)
+var speed = 300.0
+var dirreccion = Vector2.ZERO
 var pelota_inicio = true
 var vidas = 2
 var puntos = 0
@@ -16,7 +16,8 @@ func _ready():
 func _physics_process(delta: float) -> void:
 	
 	if pelota_inicio:
-		global_position = tabla.global_position + Vector2(0,-60)
+		global_position = tabla.global_position + 	Vector2(0,-60)
+		return
 	
 	velocity = dirreccion * speed
 	var collision = move_and_collide(velocity * delta)
@@ -31,8 +32,7 @@ func _physics_process(delta: float) -> void:
 			sumar_puntos()
 			
 			
-			
-	var posision = position.y>640
+	var posision:bool = position.y>640
 	if posision:
 		if vidas != 0:
 			resetear_pelota()
@@ -44,7 +44,7 @@ func _physics_process(delta: float) -> void:
 
 func lanzar_pelota():
 	pelota_inicio = false
-	dirreccion = Vector2(0, -1)
+	dirreccion = Vector2(randf_range(-0.5, 0.5), -1).normalized()
 	
 func _input(event):
 	if event.is_action_pressed("disparar") and pelota_inicio:
@@ -52,8 +52,8 @@ func _input(event):
 	
 func resetear_pelota():
 	pelota_inicio = true
-	velocity = Vector2(0,0)
-	dirreccion = Vector2(0,0)
+	velocity = Vector2.ZERO
+	dirreccion = Vector2.ZERO
 
 func sumar_puntos(): 
 	puntos += 1

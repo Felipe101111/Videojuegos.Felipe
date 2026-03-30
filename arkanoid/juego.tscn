@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://8c2yip71rlpy"]
 
 [ext_resource type="PackedScene" uid="uid://cj2mliaci1xta" path="res://arkanoid/pelota.tscn" id="1_g3llj"]
-[ext_resource type="Texture2D" uid="uid://bjcdoxuexx2h4" path="res://arkanoid/360_F_399332506_jWfBrqOsQ7GrUKgu0rUEYqVbkvxTf6FE.jpg" id="1_v42kt"]
 [ext_resource type="Script" uid="uid://b2rx14qfdb7ek" path="res://arkanoid/tabla.gd" id="2_6oal5"]
 [ext_resource type="PackedScene" uid="uid://ddb80xuje1cus" path="res://arkanoid/tabla.tscn" id="2_onam3"]
 [ext_resource type="PackedScene" uid="uid://dxpienf34sedo" path="res://arkanoid/piso.tscn" id="3_6oal5"]
@@ -10,15 +9,7 @@
 [ext_resource type="Script" uid="uid://68gf525hpy7j" path="res://arkanoid/bloque.gd" id="5_t66dm"]
 [ext_resource type="PackedScene" uid="uid://dyte8rjry1gg1" path="res://arkanoid/puntos.tscn" id="8_q0r6b"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_au1d7"]
-texture = ExtResource("1_v42kt")
-
 [node name="juego" type="Node2D" unique_id=468251010]
-
-[node name="Panel" type="Panel" parent="." unique_id=861729051]
-offset_right = 1150.0
-offset_bottom = 644.0
-theme_override_styles/panel = SubResource("StyleBoxTexture_au1d7")
 
 [node name="tabla" parent="." unique_id=216499585 instance=ExtResource("2_onam3")]
 position = Vector2(549, 625)
@@ -28,22 +19,16 @@ script = ExtResource("2_6oal5")
 position = Vector2(545, 569)
 script = ExtResource("4_0xqtb")
 
-[node name="piso4" parent="." unique_id=1070596665 instance=ExtResource("3_6oal5")]
-position = Vector2(1409, -36.999996)
-rotation = -0.052600354
-scale = Vector2(0.99999994, 0.99999994)
-
-[node name="piso" parent="." unique_id=1594821339 instance=ExtResource("3_6oal5")]
-position = Vector2(-298.00006, -58)
-rotation = 0.075803004
+[node name="piso" parent="." unique_id=1070596665 instance=ExtResource("3_6oal5")]
+position = Vector2(538, 3)
 
 [node name="piso2" parent="." unique_id=920883470 instance=ExtResource("3_6oal5")]
-position = Vector2(8.000002, 338)
-rotation = 1.6554939
+position = Vector2(-4, 343)
+rotation = 1.5719482
 
 [node name="piso3" parent="." unique_id=1976115483 instance=ExtResource("3_6oal5")]
-position = Vector2(1136.0001, 241.00002)
-rotation = 4.6144476
+position = Vector2(1154, 246)
+rotation = 4.704969
 
 [node name="bloque" parent="." unique_id=2042011558 instance=ExtResource("4_onam3")]
 position = Vector2(168, 127)
@@ -142,8 +127,8 @@ position = Vector2(1011, 329)
 script = ExtResource("5_t66dm")
 
 [node name="puntos" parent="." unique_id=1618013641 instance=ExtResource("8_q0r6b")]
-offset_left = 524.0
-offset_top = -11.0
-offset_right = 579.0
-offset_bottom = 16.0
+offset_left = 34.0
+offset_top = 42.0
+offset_right = 89.0
+offset_bottom = 69.0
 metadata/_edit_use_anchors_ = true

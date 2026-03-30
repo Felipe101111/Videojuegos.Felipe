@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dxpienf34sedo"]
+
+[ext_resource type="Texture2D" uid="uid://cfjfbx1w0dtla" path="res://arkanoid/kenney_puzzle-pack/png/element_yellow_rectangle.png" id="1_4bv3m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q42xa"]
+size = Vector2(1719, 64)
+
+[node name="piso" type="StaticBody2D" unique_id=1070596665]
+
+[node name="TilesDecorative" type="Sprite2D" parent="." unique_id=1867047878]
+position = Vector2(2.4999943, 2.999999)
+scale = Vector2(26.953125, 2)
+texture = ExtResource("1_4bv3m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=320336699]
+position = Vector2(-0.5, 3)
+shape = SubResource("RectangleShape2D_q42xa")

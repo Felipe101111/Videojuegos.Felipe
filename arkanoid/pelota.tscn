@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cj2mliaci1xta"]
+
+[ext_resource type="Texture2D" uid="uid://tupw1y3tewsu" path="res://arkanoid/kenney_puzzle-pack/png/ballBlue.png" id="1_uyrj7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8mbwy"]
+radius = 13.0
+
+[node name="pelota" type="CharacterBody2D" unique_id=43715114]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1951574439]
+position = Vector2(5.364418e-07, 3.874302e-07)
+scale = Vector2(1.1818184, 1.1818181)
+texture = ExtResource("1_uyrj7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=378796956]
+shape = SubResource("CircleShape2D_8mbwy")

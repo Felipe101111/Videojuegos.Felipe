@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bw2f804cjoxei"]
+
+[ext_resource type="Texture2D" uid="uid://cgs8njl3w3ohv" path="res://arkanoid/kenney_puzzle-pack/png/element_green_square.png" id="1_o7tmk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jk01s"]
+size = Vector2(97, 47)
+
+[node name="bloque_2" type="StaticBody2D" unique_id=2042011558]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1406859289]
+position = Vector2(-15.5, -12.499996)
+scale = Vector2(3.03125, 1.4687499)
+texture = ExtResource("1_o7tmk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1493990499]
+position = Vector2(-15.5, -12.5)
+shape = SubResource("RectangleShape2D_jk01s")

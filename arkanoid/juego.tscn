@@ -1,0 +1,149 @@
+[gd_scene format=3 uid="uid://8c2yip71rlpy"]
+
+[ext_resource type="PackedScene" uid="uid://cj2mliaci1xta" path="res://arkanoid/pelota.tscn" id="1_g3llj"]
+[ext_resource type="Texture2D" uid="uid://bjcdoxuexx2h4" path="res://arkanoid/360_F_399332506_jWfBrqOsQ7GrUKgu0rUEYqVbkvxTf6FE.jpg" id="1_v42kt"]
+[ext_resource type="Script" uid="uid://b2rx14qfdb7ek" path="res://arkanoid/tabla.gd" id="2_6oal5"]
+[ext_resource type="PackedScene" uid="uid://ddb80xuje1cus" path="res://arkanoid/tabla.tscn" id="2_onam3"]
+[ext_resource type="PackedScene" uid="uid://dxpienf34sedo" path="res://arkanoid/piso.tscn" id="3_6oal5"]
+[ext_resource type="Script" uid="uid://xfmk8r7fsael" path="res://arkanoid/pelota.gd" id="4_0xqtb"]
+[ext_resource type="PackedScene" uid="uid://p8s3ve1agowk" path="res://arkanoid/bloque.tscn" id="4_onam3"]
+[ext_resource type="Script" uid="uid://68gf525hpy7j" path="res://arkanoid/bloque.gd" id="5_t66dm"]
+[ext_resource type="PackedScene" uid="uid://dyte8rjry1gg1" path="res://arkanoid/puntos.tscn" id="8_q0r6b"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_au1d7"]
+texture = ExtResource("1_v42kt")
+
+[node name="juego" type="Node2D" unique_id=468251010]
+
+[node name="Panel" type="Panel" parent="." unique_id=861729051]
+offset_right = 1150.0
+offset_bottom = 644.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_au1d7")
+
+[node name="tabla" parent="." unique_id=216499585 instance=ExtResource("2_onam3")]
+position = Vector2(549, 625)
+script = ExtResource("2_6oal5")
+
+[node name="pelota" parent="." unique_id=1112620947 instance=ExtResource("1_g3llj")]
+position = Vector2(545, 569)
+script = ExtResource("4_0xqtb")
+
+[node name="piso4" parent="." unique_id=1070596665 instance=ExtResource("3_6oal5")]
+position = Vector2(1409, -36.999996)
+rotation = -0.052600354
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="piso" parent="." unique_id=1594821339 instance=ExtResource("3_6oal5")]
+position = Vector2(-298.00006, -58)
+rotation = 0.075803004
+
+[node name="piso2" parent="." unique_id=920883470 instance=ExtResource("3_6oal5")]
+position = Vector2(8.000002, 338)
+rotation = 1.6554939
+
+[node name="piso3" parent="." unique_id=1976115483 instance=ExtResource("3_6oal5")]
+position = Vector2(1136.0001, 241.00002)
+rotation = 4.6144476
+
+[node name="bloque" parent="." unique_id=2042011558 instance=ExtResource("4_onam3")]
+position = Vector2(168, 127)
+script = ExtResource("5_t66dm")
+
+[node name="bloque2" parent="." unique_id=1836453989 instance=ExtResource("4_onam3")]
+position = Vector2(285, 127)
+script = ExtResource("5_t66dm")
+
+[node name="bloque3" parent="." unique_id=1159315616 instance=ExtResource("4_onam3")]
+position = Vector2(891, 127)
+script = ExtResource("5_t66dm")
+
+[node name="bloque4" parent="." unique_id=2088319262 instance=ExtResource("4_onam3")]
+position = Vector2(405, 127)
+script = ExtResource("5_t66dm")
+
+[node name="bloque5" parent="." unique_id=2050211964 instance=ExtResource("4_onam3")]
+position = Vector2(528, 127)
+script = ExtResource("5_t66dm")
+
+[node name="bloque6" parent="." unique_id=621844137 instance=ExtResource("4_onam3")]
+position = Vector2(651, 127)
+script = ExtResource("5_t66dm")
+
+[node name="bloque7" parent="." unique_id=1930974525 instance=ExtResource("4_onam3")]
+position = Vector2(773, 127)
+script = ExtResource("5_t66dm")
+
+[node name="bloque8" parent="." unique_id=1241183607 instance=ExtResource("4_onam3")]
+position = Vector2(1011, 129)
+script = ExtResource("5_t66dm")
+
+[node name="bloque9" parent="." unique_id=1459896277 instance=ExtResource("4_onam3")]
+position = Vector2(168, 228)
+script = ExtResource("5_t66dm")
+
+[node name="bloque10" parent="." unique_id=638373420 instance=ExtResource("4_onam3")]
+position = Vector2(285, 228)
+script = ExtResource("5_t66dm")
+
+[node name="bloque11" parent="." unique_id=1555942949 instance=ExtResource("4_onam3")]
+position = Vector2(891, 228)
+script = ExtResource("5_t66dm")
+
+[node name="bloque12" parent="." unique_id=165641083 instance=ExtResource("4_onam3")]
+position = Vector2(405, 228)
+script = ExtResource("5_t66dm")
+
+[node name="bloque13" parent="." unique_id=44609925 instance=ExtResource("4_onam3")]
+position = Vector2(528, 228)
+script = ExtResource("5_t66dm")
+
+[node name="bloque14" parent="." unique_id=694833250 instance=ExtResource("4_onam3")]
+position = Vector2(651, 228)
+script = ExtResource("5_t66dm")
+
+[node name="bloque15" parent="." unique_id=1307169016 instance=ExtResource("4_onam3")]
+position = Vector2(773, 228)
+script = ExtResource("5_t66dm")
+
+[node name="bloque16" parent="." unique_id=587582929 instance=ExtResource("4_onam3")]
+position = Vector2(1011, 230)
+script = ExtResource("5_t66dm")
+
+[node name="bloque17" parent="." unique_id=1574655667 instance=ExtResource("4_onam3")]
+position = Vector2(168, 327)
+script = ExtResource("5_t66dm")
+
+[node name="bloque18" parent="." unique_id=249469606 instance=ExtResource("4_onam3")]
+position = Vector2(285, 327)
+script = ExtResource("5_t66dm")
+
+[node name="bloque19" parent="." unique_id=75892454 instance=ExtResource("4_onam3")]
+position = Vector2(891, 327)
+script = ExtResource("5_t66dm")
+
+[node name="bloque20" parent="." unique_id=1898351566 instance=ExtResource("4_onam3")]
+position = Vector2(405, 327)
+script = ExtResource("5_t66dm")
+
+[node name="bloque21" parent="." unique_id=506202083 instance=ExtResource("4_onam3")]
+position = Vector2(528, 327)
+script = ExtResource("5_t66dm")
+
+[node name="bloque22" parent="." unique_id=1121907412 instance=ExtResource("4_onam3")]
+position = Vector2(651, 327)
+script = ExtResource("5_t66dm")
+
+[node name="bloque23" parent="." unique_id=1017019683 instance=ExtResource("4_onam3")]
+position = Vector2(773, 327)
+script = ExtResource("5_t66dm")
+
+[node name="bloque24" parent="." unique_id=342525277 instance=ExtResource("4_onam3")]
+position = Vector2(1011, 329)
+script = ExtResource("5_t66dm")
+
+[node name="puntos" parent="." unique_id=1618013641 instance=ExtResource("8_q0r6b")]
+offset_left = 524.0
+offset_top = -11.0
+offset_right = 579.0
+offset_bottom = 16.0
+metadata/_edit_use_anchors_ = true

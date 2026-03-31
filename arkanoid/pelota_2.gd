@@ -58,6 +58,6 @@ func resetear_pelota():
 func sumar_puntos(): 
 	puntos += 1
 	puntaje.text = str(puntos)
-	if puntos==24 :
+	if puntos==40 :
 		get_tree().change_scene_to_file("res://arkanoid/ganaste_juego_2.tscn")
 	

@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dt7xaxn3n1115"]
 
+[ext_resource type="Texture2D" uid="uid://bjcdoxuexx2h4" path="res://arkanoid/360_F_399332506_jWfBrqOsQ7GrUKgu0rUEYqVbkvxTf6FE.jpg" id="1_8mve3"]
 [ext_resource type="PackedScene" uid="uid://714hmac60vis" path="res://arkanoid/tabla_2.tscn" id="1_fgrpj"]
 [ext_resource type="Script" uid="uid://vbt238dm11lb" path="res://arkanoid/tabla_2.gd" id="2_lj62q"]
 [ext_resource type="PackedScene" uid="uid://ddb80xuje1cus" path="res://arkanoid/tabla.tscn" id="3_8mve3"]
@@ -11,7 +12,15 @@
 [ext_resource type="PackedScene" uid="uid://dyte8rjry1gg1" path="res://arkanoid/puntos.tscn" id="9_fgrpj"]
 [ext_resource type="Script" uid="uid://dplv6lccr0w4d" path="res://arkanoid/bloque_2.gd" id="9_lj62q"]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iib2q"]
+texture = ExtResource("1_8mve3")
+
 [node name="juego_modo2" type="Node2D" unique_id=646635491]
+
+[node name="Panel" type="Panel" parent="." unique_id=490613692]
+offset_right = 1145.0
+offset_bottom = 644.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_iib2q")
 
 [node name="tabla2" parent="." unique_id=216499585 instance=ExtResource("1_fgrpj")]
 position = Vector2(626, 623)
@@ -21,19 +30,24 @@ script = ExtResource("2_lj62q")
 position = Vector2(493, 624)
 script = ExtResource("4_iib2q")
 
-[node name="piso" parent="." unique_id=1070596665 instance=ExtResource("7_kc11x")]
-position = Vector2(547, -1)
+[node name="piso4" parent="." unique_id=1070596665 instance=ExtResource("7_kc11x")]
+position = Vector2(1446, -42.999992)
+rotation = -0.08182519
+
+[node name="piso" parent="." unique_id=1806738023 instance=ExtResource("7_kc11x")]
+position = Vector2(-268.99994, -42.999996)
+rotation = 0.08183739
 
 [node name="piso3" parent="." unique_id=1270416574 instance=ExtResource("7_kc11x")]
-position = Vector2(1148.0001, 279)
-rotation = 1.5632762
+position = Vector2(1141, 275)
+rotation = 1.4910223
 
 [node name="piso2" parent="." unique_id=948379773 instance=ExtResource("7_kc11x")]
-position = Vector2(10.000004, 333)
-rotation = -1.5677366
+position = Vector2(-2.000002, 337)
+rotation = -1.4769604
 
 [node name="pelota_2" parent="." unique_id=43715114 instance=ExtResource("6_mmsew")]
-position = Vector2(487, 535)
+position = Vector2(492, 565)
 script = ExtResource("7_fgrpj")
 
 [node name="bloque_9" parent="." unique_id=2042011558 instance=ExtResource("8_lj62q")]
@@ -48,68 +62,132 @@ script = ExtResource("9_lj62q")
 position = Vector2(780, 122)
 script = ExtResource("9_lj62q")
 
+[node name="bloque_26" parent="." unique_id=431577029 instance=ExtResource("8_lj62q")]
+position = Vector2(1014, 324)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_27" parent="." unique_id=820520217 instance=ExtResource("8_lj62q")]
+position = Vector2(901, 324)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_28" parent="." unique_id=940357325 instance=ExtResource("8_lj62q")]
+position = Vector2(785, 322)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_29" parent="." unique_id=560314146 instance=ExtResource("8_lj62q")]
+position = Vector2(664, 323)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_30" parent="." unique_id=318465793 instance=ExtResource("8_lj62q")]
+position = Vector2(548, 323)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_31" parent="." unique_id=1083407924 instance=ExtResource("8_lj62q")]
+position = Vector2(305, 324)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_32" parent="." unique_id=1352956643 instance=ExtResource("8_lj62q")]
+position = Vector2(427, 323)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_33" parent="." unique_id=1752888234 instance=ExtResource("8_lj62q")]
+position = Vector2(1014, 392)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_34" parent="." unique_id=1119351446 instance=ExtResource("8_lj62q")]
+position = Vector2(901, 392)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_35" parent="." unique_id=2034589918 instance=ExtResource("8_lj62q")]
+position = Vector2(785, 390)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_36" parent="." unique_id=1042355799 instance=ExtResource("8_lj62q")]
+position = Vector2(664, 391)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_37" parent="." unique_id=2129783391 instance=ExtResource("8_lj62q")]
+position = Vector2(548, 391)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_38" parent="." unique_id=2115505771 instance=ExtResource("8_lj62q")]
+position = Vector2(427, 391)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_39" parent="." unique_id=1473402621 instance=ExtResource("8_lj62q")]
+position = Vector2(305, 392)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_40" parent="." unique_id=1192894306 instance=ExtResource("8_lj62q")]
+position = Vector2(192, 392)
+script = ExtResource("9_lj62q")
+
+[node name="bloque_41" parent="." unique_id=451822089 instance=ExtResource("8_lj62q")]
+position = Vector2(192, 324)
+script = ExtResource("9_lj62q")
+
 [node name="bloque_13" parent="." unique_id=1881371206 instance=ExtResource("8_lj62q")]
-position = Vector2(1009, 223)
+position = Vector2(1011, 193)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_12" parent="." unique_id=670830437 instance=ExtResource("8_lj62q")]
-position = Vector2(896, 223)
+position = Vector2(898, 193)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_11" parent="." unique_id=2075120560 instance=ExtResource("8_lj62q")]
-position = Vector2(780, 221)
+position = Vector2(782, 191)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_10" parent="." unique_id=985455374 instance=ExtResource("8_lj62q")]
-position = Vector2(659, 222)
+position = Vector2(661, 192)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_14" parent="." unique_id=1173198164 instance=ExtResource("8_lj62q")]
-position = Vector2(543, 222)
+position = Vector2(545, 192)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_15" parent="." unique_id=270523422 instance=ExtResource("8_lj62q")]
-position = Vector2(300, 223)
+position = Vector2(302, 193)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_16" parent="." unique_id=1996432136 instance=ExtResource("8_lj62q")]
-position = Vector2(422, 222)
+position = Vector2(424, 192)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_19" parent="." unique_id=415262747 instance=ExtResource("8_lj62q")]
-position = Vector2(1009, 319)
+position = Vector2(1011, 261)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_18" parent="." unique_id=1539320874 instance=ExtResource("8_lj62q")]
-position = Vector2(896, 319)
+position = Vector2(898, 261)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_20" parent="." unique_id=207912385 instance=ExtResource("8_lj62q")]
-position = Vector2(780, 317)
+position = Vector2(782, 259)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_21" parent="." unique_id=682345052 instance=ExtResource("8_lj62q")]
-position = Vector2(659, 318)
+position = Vector2(661, 260)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_22" parent="." unique_id=2024627785 instance=ExtResource("8_lj62q")]
-position = Vector2(543, 318)
+position = Vector2(545, 260)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_23" parent="." unique_id=977193135 instance=ExtResource("8_lj62q")]
-position = Vector2(422, 318)
+position = Vector2(424, 260)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_24" parent="." unique_id=453167658 instance=ExtResource("8_lj62q")]
-position = Vector2(300, 319)
+position = Vector2(302, 261)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_25" parent="." unique_id=2038395292 instance=ExtResource("8_lj62q")]
-position = Vector2(187, 319)
+position = Vector2(189, 261)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_17" parent="." unique_id=1235807765 instance=ExtResource("8_lj62q")]
-position = Vector2(187, 223)
+position = Vector2(189, 193)
 script = ExtResource("9_lj62q")
 
 [node name="bloque_6" parent="." unique_id=406029987 instance=ExtResource("8_lj62q")]
@@ -133,8 +211,8 @@ position = Vector2(187, 124)
 script = ExtResource("9_lj62q")
 
 [node name="puntos" parent="." unique_id=1618013641 instance=ExtResource("9_fgrpj")]
-offset_left = 55.0
-offset_top = 38.0
-offset_right = 110.0
-offset_bottom = 65.0
+offset_left = 553.0
+offset_top = 14.0
+offset_right = 608.0
+offset_bottom = 41.0
 metadata/_edit_use_anchors_ = true

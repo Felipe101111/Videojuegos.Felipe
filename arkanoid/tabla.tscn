@@ -1,17 +1,15 @@
 [gd_scene format=3 uid="uid://ddb80xuje1cus"]
 
-[ext_resource type="Texture2D" uid="uid://bccn8unjfh064" path="res://PNG/Default (64px)/wall.png" id="1_ry1ed"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
-size = Vector2(60, 20)
+[ext_resource type="Texture2D" uid="uid://q35l6apljlfj" path="res://arkanoid/paddleBlu.png" id="1_ry1ed"]
 
 [node name="tabla" type="CharacterBody2D" unique_id=216499585]
 position = Vector2(588, 317)
 motion_mode = 1
 
-[node name="Wall" type="Sprite2D" parent="." unique_id=1955639675]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=621020306]
+position = Vector2(1, -19.999998)
+scale = Vector2(1, 0.83333313)
 texture = ExtResource("1_ry1ed")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=914422417]
-position = Vector2(0, -20)
-shape = SubResource("RectangleShape2D_0xm2m")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=783363920]
+polygon = PackedVector2Array(-51, -17, -43, -10, 45, -10, 53, -16, 53, -23, 51, -26, 1, -30, -50, -26, -51, -23)
